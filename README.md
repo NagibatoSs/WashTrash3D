@@ -1,18 +1,18 @@
 # Wash Trash 3D
 
-Жанры: Sorting, Match, Puzzle
+Genres: Sorting, Match, Puzzle
 
-**Скачать:** [Wash Trash 3D](https://disk.yandex.ru/d/qzMiVI6xxstw-w)
+**Download:** [Wash Trash 3D](https://disk.yandex.ru/d/qzMiVI6xxstw-w)
 
 
 <p align="center">
   <img src="./Screenshots/gameplay.gif" width="200"/>
 </p>
 
-## Описание:
-Игра разработана в рамках курса повышения квалификации "Разработка игр на Unity".
-В каждом уровне игроку необходимо очистить игровое поле от мусора, соединяя объекты одинакового типа.
-На сцене также присутствуют объекты, не относящиеся к мусору, что усложняет игровой процесс.
+## Description:
+The game was developed during the "Game Development in Unity" professional development course.
+In each level, the player needs to clear the playing field of trash by matching objects of the same type.
+The scene also contains objects that are not trash, which makes the gameplay more challenging.
 
 <p align="center">
   <img src="./Screenshots/screen1.png" width="200"/>
@@ -20,30 +20,28 @@
   <img src="./Screenshots/screen2.png" width="200"/>
 </p>
 
-## Ключевые особенности:
-- Механика соединения объектов одинакового типа
-- Обработка взаимодействия игрока с объектами на сцене
-- Механика перетаскивания объектов (drag & drop)
-- Управление игровым циклом через Finite State Machine
+## Key features:
+- Mechanic of matching objects of the same type
+- Handling player interaction with objects in the scene
+- Drag & drop mechanic for objects
+- Game loop managed by a Finite State Machine
 
+## Technologies and approaches:
+- Component-based architecture
+- Event-driven communication between components (UnityEvents)
+- Adaptive UI (Safe Area, support for different resolutions and both portrait and landscape orientations)
+- Finite State Machine for the game loop (menu, gameplay, win)
+- Scripted animations, Animator and DOTween
+- Setting up imported 3D models animations
+- Saving and loading data (JSON serialization)
+- VFX (Particle System, Trail)
+- Object Pooling for VFX optimization
+- ScriptableObjects for storing player progress
+- Visual design of game objects
 
-## Использованные технологии и подходы:
-- Component-based архитектура
-- Event-driven взаимодействие между компонентами (UnityEvents)
-- Адаптивный UI (SafeArea, поддержка разных разрешений и вертикальной и горизонтальной ориентаций)
-- Finite State Machine для управления игровым циклом (меню, игра, победа)
-- Работа со скриптовой анимацией, стандартным Animator, DoTween
-- Работа с анимацией 3D-моделей
-- Сохранение и загрузка данных (JSON-сериализация)
-- Работа с VFX (Particle system, trail)
-- Object Pooling для оптимизации VFX
-- ScriptableObjects для хранения прогресса игрока
-- Работа с  визуальным оформлением объектов
-
-## Возможные улучшения реализации:
-- Переработать систему переключения UI (сейчас реализована через Animator)
-- Упростить логику переключения игрового состояния (на данный момент реализовано через 2 скрипта на
-каждом элементе, переключающем GameState)
-- Разделить ответственность Getter (отделить логику подсчета количества мусора и визуального отклика)
-- Улучшить настройки сцены (позиции коллайдеров, точка спавна объектов)
-- Перейти от статической загрузки уровней (prefab) к процедурной генерации
+## Possible improvements:
+- Rework the UI switching system (currently implemented with Animator)
+- Simplify the game state switching logic (currently implemented with 2 scripts on each element that switches the GameState)
+- Split the responsibilities of Getter (separate the trash counting logic from the visual feedback)
+- Improve the scene setup (collider positions, object spawn point)
+- Move from static level loading (prefabs) to procedural generation
