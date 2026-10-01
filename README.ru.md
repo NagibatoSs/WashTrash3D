@@ -1,8 +1,11 @@
 # Wash Trash 3D
 
+[English](README.md) | **Русский**
+
 Жанры: Sorting, Match, Puzzle
 
-**Скачать:** [Wash Trash 3D](https://disk.yandex.ru/d/qzMiVI6xxstw-w)
+**itch.io:** [Wash Trash 3D](https://nagibatoss.itch.io/wash-trash-3d)  
+**APK:** [Скачать](https://disk.yandex.ru/d/qzMiVI6xxstw-w)
 
 
 <p align="center">

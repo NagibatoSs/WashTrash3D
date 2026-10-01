@@ -1,5 +1,4 @@
 using UnityEngine;
-//using static UnityEditor.Progress;
 
 namespace SortItems
 {
@@ -18,7 +17,6 @@ namespace SortItems
                 (Random.Range(-_range.x, _range.x), Random.Range(-_range.y, _range.y), Random.Range(-_range.z, _range.z));
                 var obj = Instantiate(_prefab, transform.position + offset, Quaternion.identity);
                 obj.transform.parent = transform;
-                Debug.Log(obj.GetComponent<DragItem>().Type);
                 if(obj.GetComponent<DragItem>().Type == ItemType.Trash)
                 {
                     var item = obj.GetComponent<ItemGetter>();
